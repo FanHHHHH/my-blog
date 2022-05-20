@@ -353,7 +353,6 @@ module.exports = function (webpackEnv) {
                 },
                 {
                   loader: require.resolve('file-loader'),
-                  // exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.wasm$/],
                   options: {
                     name: 'static/media/[name].[hash].[ext]',
                   },
