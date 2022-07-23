@@ -5,7 +5,6 @@ import PostHeader from '../../components/Post/post-header'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/Post/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import { Content, Layout } from '../../components'
 
@@ -39,7 +38,7 @@ export default function Post({ post }: any) {
 export async function getStaticProps({ params }: any) {
   const post = getPostBySlug(params.slug, ['title', 'date', 'slug', 'author', 'content'])
   const content = await markdownToHtml(post.content || '')
-
+  
   return {
     props: {
       post: {

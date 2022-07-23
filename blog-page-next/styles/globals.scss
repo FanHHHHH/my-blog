@@ -16,7 +16,7 @@
 }
 
 *::selection {
-  background: $theme-color;
+  background: $pale-cyan-blue;
 }
 
 .clearfix::after {
@@ -28,7 +28,8 @@ body {
   font-family: $font-hei;
   font-size: 14px;
   line-height: 1.5rem;
-  background-color: #e5e5e5;
+  // background-color: #e5e5e5;
+  background-color: $background-color;
 }
 
 ul,
@@ -41,6 +42,11 @@ a {
   color: inherit;
 }
 
+a:hover,
+a:active {
+  color: #d6bf67;
+}
+
 input,
 button {
   font: inherit;
@@ -48,4 +54,28 @@ button {
 
 :focus {
   outline: none;
+}
+
+.markdown-body {
+  ul,
+  ol {
+    font-size: 110%;
+    line-height: 2.3;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  pre {
+    background: #3b3228 !important;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.3;
+    color: #d0c8c6;
+  }
+  // code {
+  //   background-color: $theme-color !important;
+  //   &::selection {
+  //     background-color: $theme-color-dark;
+  //   }
+  // }
 }

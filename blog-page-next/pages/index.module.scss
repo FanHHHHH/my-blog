@@ -1,0 +1,23 @@
+@import '../styles/config.scss';
+
+.indexLeft {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: $theme-color;
+  border-radius: 4px;
+
+  text-align: right;
+  & .me {
+    font-size: 2rem;
+    color: $dark-green;
+  }
+}
+
+.indexRight {
+  border-left: 2px dashed $black;
+  margin-left: 210px;
+  height: 800px;
+  padding: 10px;
+}

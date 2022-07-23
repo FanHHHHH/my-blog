@@ -1,21 +1,23 @@
 @import '../styles/config.scss';
 
 .nav {
-  border: 1px solid red;
-  width: 72rem;
+  border-bottom: 2px solid $luminous-vivid-orange;
+  width: 980px;
   margin: 0 auto;
   padding: 1rem 0;
   & > ul {
     display: flex;
     justify-content: center;
-    li:hover {
-      background-color: $theme-color;
-    }
+
     li > a {
-      border-bottom: 1px solid #000000;
+      // border-bottom: 1px solid #000000;
+      font-size: 1.6em;
+    }
+    li.active a {
+      color: $luminous-vivid-orange;
     }
   }
   .hr {
-    margin: 0 1rem;
+    margin: 0 3rem;
   }
 }

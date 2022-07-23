@@ -1,0 +1,28 @@
+.post-body {
+  ul,
+  ol {
+    font-size: 110%;
+    line-height: 2.3;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  pre {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.3;
+  }
+}
+
+.postTitle {
+  font-size: 2rem;
+}
+
+.postHeader {
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  // padding: 45px 45px 0 45px;
+  line-height: 2rem;
+}

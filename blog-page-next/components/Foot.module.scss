@@ -1,8 +1,9 @@
 @import '../styles/config.scss';
 
 .footwrapper {
-  border-top: 2px dashed $black;
+  // border-top: 2px dashed $black;
+  border-top: 2px solid $luminous-vivid-orange;
   padding-top: 1.5rem;
-  width: 72rem;
+  width: 980px;
   margin: 0 auto;
 }
